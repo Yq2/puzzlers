@@ -36,7 +36,9 @@ func main() {
 	expectedIndex := reader1.Size() - int64(reader1.Len()) + offset2
 	fmt.Printf("Seek with offset %d and whence %d ...\n", offset2, io.SeekCurrent)
 	//Reader.Seek内部支持 0,1,2这三种偏移模式，分布用io.SeekStart,io.SeekCurrent,io.SeekEnd代指
-	readingIndex, _ := reader1.Seek(offset2, io.SeekCurrent) //io.SeekCurrent表示从当前起始位置开始偏移，SeekStart表示从首位开始偏移，SeekEnd表示从最末尾开始偏移
+	//io.SeekCurrent表示从当前起始位置开始偏移，SeekStart表示从首位开始偏移，SeekEnd表示从最末尾开始偏移
+	//offset 可以负数，表示负偏移
+	readingIndex, _ := reader1.Seek(-2, io.SeekCurrent)
 	fmt.Printf("The reading index in reader: %d (returned by Seek)\n", readingIndex)
 	fmt.Printf("The reading index in reader: %d (computed by me)\n", expectedIndex)
 
