@@ -9,6 +9,7 @@ func main() {
 	// 示例1。
 	var buffer1 bytes.Buffer
 	contents := "Simple byte buffer for marshaling data."
+	fmt.Printf("contents length=%d\n",len(contents))
 	fmt.Printf("Write contents %q ...\n", contents)
 	buffer1.WriteString(contents)
 	fmt.Printf("The length of buffer: %d\n", buffer1.Len())

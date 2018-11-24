@@ -2,18 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02d7cfc0-be87-414c-8629-9198ac4da3f6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article33/q4/code_build.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article33/q4/stringBuilderBytesBuffer_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article30/q3/demo77.go" beforeDir="false" afterPath="$PROJECT_DIR$/article30/q3/demo77.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article31/q0/demo78.go" beforeDir="false" afterPath="$PROJECT_DIR$/article31/q0/demo78.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article31/q2/demo79.go" beforeDir="false" afterPath="$PROJECT_DIR$/article31/q2/demo79.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-47049764">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="go" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Go" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="522" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="522" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/article33/q4/code_build.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#14#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,6 +84,10 @@
         <option value="$PROJECT_DIR$/article30/q1/demo75.go" />
         <option value="$PROJECT_DIR$/article30/q2/demo76.go" />
         <option value="$PROJECT_DIR$/article30/q3/demo77.go" />
+        <option value="$PROJECT_DIR$/article31/q0/demo78.go" />
+        <option value="$PROJECT_DIR$/article31/q2/demo79.go" />
+        <option value="$PROJECT_DIR$/article33/q4/stringBuilderBytesBuffer_test.go" />
+        <option value="$PROJECT_DIR$/article33/q4/code_build.go" />
       </list>
     </option>
   </component>
@@ -46,21 +97,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-102" />
     <option name="y" value="108" />
     <option name="width" value="1936" />
     <option name="height" value="583" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -68,10 +118,86 @@
               <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
               <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article31" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article31" type="462c0819:PsiDirectoryNode" />
+              <item name="q0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article31" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article31" type="462c0819:PsiDirectoryNode" />
+              <item name="q3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article32" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article32" type="462c0819:PsiDirectoryNode" />
+              <item name="q0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article32" type="462c0819:PsiDirectoryNode" />
+              <item name="q1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article32" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article33" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article33" type="462c0819:PsiDirectoryNode" />
+              <item name="q1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article33" type="462c0819:PsiDirectoryNode" />
+              <item name="q2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article33" type="462c0819:PsiDirectoryNode" />
+              <item name="q3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="puzzlers" type="b2602c69:ProjectViewProjectNode" />
+              <item name="puzzlers" type="462c0819:PsiDirectoryNode" />
+              <item name="article33" type="462c0819:PsiDirectoryNode" />
+              <item name="q4" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -103,85 +229,103 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build demo77.go">
-    <configuration name="go build demo73.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build code_build.go">
+    <configuration name="go build code_build.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="puzzlers" />
       <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/article29/q1/demo73.go" />
+      <filePath value="$PROJECT_DIR$/article33/q4/code_build.go" />
+      <package value="puzzlers" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
-    <configuration name="go build demo74.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build demo78.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="puzzlers" />
       <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/article29/q2/demo74.go" />
+      <filePath value="$PROJECT_DIR$/article31/q0/demo78.go" />
+      <package value="puzzlers" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
-    <configuration name="go build demo75.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build demo79.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="puzzlers" />
       <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/article30/q1/demo75.go" />
+      <filePath value="$PROJECT_DIR$/article31/q2/demo79.go" />
+      <package value="puzzlers" />
       <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
     </configuration>
-    <configuration name="go build demo76.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkBytesBuffer in puzzlers/article33/q4" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="puzzlers" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/article30/q2/demo76.go" />
+      <working_directory value="$PROJECT_DIR$/article33/q4" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="puzzlers/article33/q4" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^BenchmarkBytesBuffer$" />
+      <method v="2" />
     </configuration>
-    <configuration name="go build demo77.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkStringsBuilder in puzzlers/article33/q4" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="puzzlers" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/article30/q3/demo77.go" />
+      <working_directory value="$PROJECT_DIR$/article33/q4" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="puzzlers/article33/q4" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^BenchmarkStringsBuilder$" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build demo73.go" />
-      <item itemvalue="Go Build.go build demo74.go" />
-      <item itemvalue="Go Build.go build demo75.go" />
-      <item itemvalue="Go Build.go build demo76.go" />
-      <item itemvalue="Go Build.go build demo77.go" />
+      <item itemvalue="Go Build.go build demo78.go" />
+      <item itemvalue="Go Build.go build demo79.go" />
+      <item itemvalue="Go Test.BenchmarkBytesBuffer in puzzlers/article33/q4" />
+      <item itemvalue="Go Test.BenchmarkStringsBuilder in puzzlers/article33/q4" />
+      <item itemvalue="Go Build.go build code_build.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build demo77.go" />
-        <item itemvalue="Go Build.go build demo76.go" />
-        <item itemvalue="Go Build.go build demo75.go" />
-        <item itemvalue="Go Build.go build demo73.go" />
-        <item itemvalue="Go Build.go build demo74.go" />
+        <item itemvalue="Go Build.go build code_build.go" />
+        <item itemvalue="Go Test.BenchmarkStringsBuilder in puzzlers/article33/q4" />
+        <item itemvalue="Go Test.BenchmarkBytesBuffer in puzzlers/article33/q4" />
+        <item itemvalue="Go Build.go build demo79.go" />
+        <item itemvalue="Go Build.go build demo78.go" />
       </list>
     </recent_temporary>
   </component>
+  <component name="TestHistory">
+    <history-entry file="BenchmarkBytesBuffer_in_puzzlers_article33_q4 - 2018.11.18 at 17h 17m 57s.xml">
+      <configuration name="BenchmarkBytesBuffer in puzzlers/article33/q4" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkStringsBuilder_in_puzzlers_article33_q4 - 2018.11.18 at 17h 18m 34s.xml">
+      <configuration name="BenchmarkStringsBuilder in puzzlers/article33/q4" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3445287" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124200426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3438178" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,83 +335,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/article16/q3/demo40.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article16/q3/demo40.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article28/q0/demo71.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article28/q2/demo72.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article28/q2/q21/demo721.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Go/src/sync/map.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article27/q0/demo70.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="70" column="4" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article28/q0/demo71.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article28/q2/demo72.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3060">
-          <caret line="185" column="10" selection-start-line="185" selection-start-column="10" selection-end-line="185" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article26/q4/demo69.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/Go/src/context/context.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7990">
-          <caret line="470" column="42" lean-forward="true" selection-start-line="470" selection-start-column="42" selection-end-line="470" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/article25/q2/demo66.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-602" />
@@ -374,13 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files (x86)/Go/src/bytes/buffer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/article29/q1/demo73.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -402,20 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article30/q1/demo75.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article30/q2/demo76.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files (x86)/Go/src/strings/reader.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -430,16 +476,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article31/q0/demo78.go">
+    <entry file="file://$PROJECT_DIR$/article30/q1/demo75.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="76">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article30/q2/demo76.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article30/q3/demo77.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article32/q0/demo81.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/article31/q2/demo79.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="210">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article31/q0/demo78.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article32/q1/demo82.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article33/q1/demo84.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article33/q2/demo85.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2982">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files (x86)/Go/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="790" column="12" selection-start-line="790" selection-start-column="12" selection-end-line="790" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files (x86)/Go/src/bytes/buffer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article32/q2/demo83.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article33/q3/demo86.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article31/q3/demo80.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="e#14#40#0" expanded="true" />
@@ -447,20 +565,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article30/q3/demo77.go">
+    <entry file="file://$PROJECT_DIR$/article33/q4/stringBuilderBytesBuffer_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#14#48#0" expanded="true" />
+            <element signature="e#14#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article31/q3/demo80.go">
+    <entry file="file://D:/Program Files (x86)/Go/src/strconv/itoa.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="192">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article33/q4/code_build.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

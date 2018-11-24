@@ -63,4 +63,5 @@ func main() {
 	buffer3.WriteString(contents)
 	fmt.Printf("The length of buffer: %d\n", buffer3.Len())
 	fmt.Printf("The capacity of buffer: %d\n", buffer3.Cap())
+
 }
