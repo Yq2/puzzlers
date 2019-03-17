@@ -14,8 +14,23 @@ func main() {
 	_ = interface{}(builder).(io.ByteWriter)
 	_ = interface{}(builder).(fmt.Stringer)
 
+	//
+	_ = interface{}(builder).(io.Writer)
+	_ = interface{}(builder).(io.ByteWriter)
+	_ = interface{}(builder).(fmt.Stringer)
+
+
 	// 示例2。
 	reader := strings.NewReader("")
+	_ = interface{}(reader).(io.Reader)
+	_ = interface{}(reader).(io.ReaderAt)
+	_ = interface{}(reader).(io.ByteReader)
+	_ = interface{}(reader).(io.RuneReader)
+	_ = interface{}(reader).(io.Seeker)
+	_ = interface{}(reader).(io.ByteScanner)
+	_ = interface{}(reader).(io.RuneScanner)
+	_ = interface{}(reader).(io.WriterTo)
+
 	_ = interface{}(reader).(io.Reader)
 	_ = interface{}(reader).(io.ReaderAt)
 	_ = interface{}(reader).(io.ByteReader)
@@ -33,12 +48,23 @@ func main() {
 	_ = interface{}(buffer).(io.ByteScanner)
 	_ = interface{}(buffer).(io.RuneScanner)
 	_ = interface{}(buffer).(io.WriterTo)
-
 	_ = interface{}(buffer).(io.Writer)
 	_ = interface{}(buffer).(io.ByteWriter)
 	_ = interface{}(buffer).(io.ReaderFrom)
-
 	_ = interface{}(buffer).(fmt.Stringer)
+
+	//
+	_ = interface{}(buffer).(io.Reader)
+	_ = interface{}(buffer).(io.ByteReader)
+	_ = interface{}(buffer).(io.RuneReader)
+	_ = interface{}(buffer).(io.ByteScanner)
+	_ = interface{}(buffer).(io.RuneScanner)
+	_ = interface{}(buffer).(io.WriterTo)
+	_ = interface{}(buffer).(io.Writer)
+	_ = interface{}(buffer).(io.ByteWriter)
+	_ = interface{}(buffer).(io.ReaderFrom)
+	_ = interface{}(buffer).(fmt.Stringer)
+
 
 	// 示例4。
 	src := strings.NewReader(
@@ -51,5 +77,19 @@ func main() {
 		fmt.Printf("error: %v\n", err)
 	} else {
 		fmt.Printf("Written(%d): %q\n", written, dst.String())
+	}
+
+	//
+
+	src2 := strings.NewReader(
+		"CopyN copies n bytes (or until an error) from src2 to dst2." +
+		"It returns the number of bytes copied an " +
+		"the erliest error encountered while copying.")
+	dst2 := new(strings.Builder)
+	written2 , err := io.CopyN(dst2, src2, src2.Size())
+	if err != nil {
+		fmt.Printf("error: %v\n", err)
+	} else {
+		fmt.Printf("Written(%d): %q\n", written2, dst2.String())
 	}
 }

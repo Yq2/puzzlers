@@ -76,5 +76,5 @@ func main() {
 	fmt.Println()
 	_, ok = interface{}(petTag).(Other)
 	fmt.Printf("PetTag implements interface Other :%v\n", ok)
-	fmt.Printf("petTag.other:%s",petTag)
+	fmt.Printf("petTag.other:%s", petTag)
 }

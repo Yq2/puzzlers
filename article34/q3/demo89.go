@@ -42,7 +42,6 @@ func main() {
 			0777,
 		},
 	}
-
 	defer os.Remove(filePath1)
 	for _, v := range argDescList {
 		fmt.Printf("%s the file with perm %o ...\n", v.action, v.perm)

@@ -20,7 +20,7 @@ func main() {
 
 	// 示例1。
 	contents0 := "OpenFile is the generalized open call."
-	flagDescList := []flagDesc{
+	flagDescList := []flagDesc {
 		{
 			os.O_WRONLY | os.O_CREATE | os.O_TRUNC,
 			"os.O_WRONLY|os.O_CREATE|os.O_TRUNC",
@@ -43,7 +43,6 @@ func main() {
 			continue
 		}
 		fmt.Printf("The file descriptor: %d\n", file1a.Fd())
-
 		contents1 := fmt.Sprintf("[%d]: %s ", i+1, contents0)
 		fmt.Printf("Write %q to the file ...\n", contents1)
 		n, err := file1a.WriteString(contents1)
@@ -72,7 +71,6 @@ func main() {
 		return
 	}
 	fmt.Printf("The file descriptor: %d\n", file2.Fd())
-
 	fmt.Println("Try to create an existing file with flag os.O_EXCL ...")
 	_, err = os.OpenFile(filePath1, os.O_RDWR|os.O_CREATE|os.O_EXCL, 0666)
 	fmt.Printf("error: %v\n", err)

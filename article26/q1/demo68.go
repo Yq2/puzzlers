@@ -25,25 +25,9 @@ func coordinateWithContext() {
 		})
 	}
 	//一共13个goutine（包含主goutine）
-	//12个子routine要么成功加num后结束，要么一直循环，也就是说每个goutine最终都会成功加num一次且仅一次
+	//12个 子routine要么成功加num后结束，要么一直循环，也就是说每个goutine最终都会成功加num一次且仅一次
 	<-cxt.Done()
 	fmt.Println("End.")
-}
-
-func coordinateWithContextt() {
-	total := 12
-	var num int32
-	fmt.Println("The number :%d [with context.Context]\n", num)
-	ctx , cancelFun := context.WithCancel(context.Background(),)
-	for i := 0 ; i< total; i++ {
-		go addNumm(&num, i, func() {
-			if atomic.LoadInt32(&num) == int32(total) {
-				cancelFun()
-			}
-		})
-	}
-	<- ctx.Done()
-	fmt.Println("The main goutine End.")
 }
 
 // addNum 用于原子地增加一次numP所指的变量的值。
@@ -52,9 +36,9 @@ func addNum(numP *int32, id int, deferFunc func()) {
 		deferFunc()
 	}()
 	for i := 0; ; i++ {
-		//获取当前循环num的值
+		//获取当前循环 num 的值
 		currNum := atomic.LoadInt32(numP)
-		//然后准备在num现有值基础上加1
+		//然后准备在num 现有值基础上加1
 		newNum := currNum + 1
 		//休眠停顿，200毫秒
 		time.Sleep(time.Millisecond * 200)
@@ -70,23 +54,6 @@ func addNum(numP *int32, id int, deferFunc func()) {
 		} else {
 			//继续下一个循环
 			//fmt.Printf("The CAS operation failed. [%d-%d]\n", id, i)
-		}
-	}
-}
-
-func addNumm(nump *int32, id int, do func()) {
-	defer func() {
-		do()
-	}()
-	for i := 0; ; i++ {
-		currnum := atomic.LoadInt32(nump)
-		newnum := currnum + 1
-		time.Sleep(time.Millisecond * 100)
-		if atomic.CompareAndSwapInt32(nump, currnum, newnum) {
-			fmt.Println("The number: %d [%d-%d]\n", newnum, id,i)
-			break
-		} else {
-			//TODO
 		}
 	}
 }

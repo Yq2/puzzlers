@@ -25,7 +25,7 @@ func main() {
 	// 示例2。
 	buf2 := make([]byte, 21)
 	offset1 := int64(64)
-	n, _ = reader1.ReadAt(buf2, offset1)
+	n, _ = reader1.ReadAt(buf2, offset1) // reader.ReadAt() 并不会影响buffer里面的已读计数
 	fmt.Printf("%d bytes were read. (call ReadAt, offset: %d)\n", n, offset1)
 	fmt.Printf("The reading index in reader: %d\n",
 		reader1.Size()-int64(reader1.Len()))
@@ -35,8 +35,8 @@ func main() {
 	offset2 := int64(17)
 	expectedIndex := reader1.Size() - int64(reader1.Len()) + offset2
 	fmt.Printf("Seek with offset %d and whence %d ...\n", offset2, io.SeekCurrent)
-	//Reader.Seek内部支持 0,1,2这三种偏移模式，分布用io.SeekStart,io.SeekCurrent,io.SeekEnd代指
-	//io.SeekCurrent表示从当前起始位置开始偏移，SeekStart表示从首位开始偏移，SeekEnd表示从最末尾开始偏移
+	//Reader.Seek内部支持 0,1,2 这三种偏移模式，分布用io.SeekStart,io.SeekCurrent,io.SeekEnd 代指
+	//io.SeekCurrent 表示从当前起始位置开始偏移，SeekStart 表示从首位开始偏移，SeekEnd 表示从最末尾开始偏移
 	//offset 可以负数，表示负偏移
 	readingIndex, _ := reader1.Seek(-2, io.SeekCurrent)
 	fmt.Printf("The reading index in reader: %d (returned by Seek)\n", readingIndex)

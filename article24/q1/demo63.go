@@ -37,21 +37,25 @@ func forAndCAS1() {
 	sign := make(chan struct{}, 2)
 	num := int32(0)
 	fmt.Printf("The number: %d\n", num)
-	go func() { // 定时增加num的值。
+	// 定时增加num的值
+	go func() {
 		defer func() {
 			sign <- struct{}{}
 		}()
 		for {
 			//自旋锁一定要设置休眠时间，否则会出现死锁
-			time.Sleep(time.Millisecond * 500)
+
 			newNum := atomic.AddInt32(&num, 2)
 			fmt.Printf("The number: %d\n", newNum)
 			if newNum == 10 {
+				fmt.Printf("break !\n")
 				break
 			}
+			time.Sleep(time.Millisecond * 500)
 		}
 	}()
-	go func() { // 定时检查num的值，如果等于10就将其归零。
+	// 定时检查num的值，如果等于10就将其归零
+	go func() {
 		defer func() {
 			sign <- struct{}{}
 		}()
@@ -61,7 +65,7 @@ func forAndCAS1() {
 				break
 			}
 			//自旋锁一定要设置休眠时间，否则会出现死锁
-			time.Sleep(time.Millisecond * 500)
+			time.Sleep(time.Millisecond * 50)
 		}
 	}()
 	<-sign
@@ -92,6 +96,7 @@ func forAndCAS2() {
 			}
 		}
 	}(1, max)
+
 	go func(id int, max int32) { // 定时增加num的值。
 		defer func() {
 			sign <- struct{}{}
@@ -110,6 +115,25 @@ func forAndCAS2() {
 			}
 		}
 	}(2, max)
+
+	go func(id int, max int32) {
+		defer func() {
+			sign <- struct{}{}
+		}()
+		for k := 0; ; k++ {
+			currNum := atomic.LoadInt32(&num)
+			if currNum >= max {
+				break
+			}
+			newNum := currNum + 2
+			time.Sleep(time.Millisecond * 150)
+			if atomic.CompareAndSwapInt32(&num, currNum, new()) {
+				fmt.Printf("The number :%d [%d-%d]\n", newNum, id, k)
+			} else {
+				fmt.Printf("The CAS operation failed: [%d-%d]\n", id, k)
+			}
+		}
+	}(3, max)
 	<-sign
 	<-sign
 }
